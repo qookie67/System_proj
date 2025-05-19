@@ -1,0 +1,30 @@
+<HomeScreen>:
+    BoxLayout:
+        orientation: "vertical"
+        padding: [0, 0, 0, 50]
+        spacing: "50dp"
+
+        FloatLayout:
+            Label:
+                size_hint: None, None
+                size: 100, 50
+                text: "Logo"
+                pos_hint: {"center_x": 0.5, "center_y": 0.5}
+
+            Button:
+                text: "Navbar"
+                size_hint: None, None
+                size: 100,100
+                pos_hint: {"x": 0, "top":1}
+
+        Button:
+            pos_hint: {"center_x": .5}
+            size_hint: .5, 1
+            text: "Import"
+
+        Button:
+            pos_hint: {"center_x": .5}
+            size_hint: .5, 1
+            text: "Scan"
+            on_press:
+                app.root.current = 'camera'

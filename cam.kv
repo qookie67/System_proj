@@ -1,0 +1,13 @@
+<CameraScreen>:
+    FloatLayout:
+        Camera:
+            id: cam
+            resolution: (640, 480)
+            play: True
+
+        Button:
+            text: "Back"
+            size_hint: 0.2, 0.1
+            pos_hint: {"center_x": 0.5, "center_y": 0.1}
+            on_press:
+                app.root.current = 'home'
